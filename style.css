@@ -262,7 +262,7 @@ button img {
     padding: 5px;
 }
 
-.question-1 li label {
+.question-1 li .touch {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -281,11 +281,12 @@ label::after {
     transition: transform 0.5s;
 }
 
+
 input[type="radio"] {
     display: none;
 }
 
-.question-1 .content {
+.content {
     background: #2d2a2a;
     text-align: left;
     padding: 0 20px;
@@ -293,15 +294,23 @@ input[type="radio"] {
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
 }
-
-.question-1 input[type="radio"]:checked+label+.content {
+.sho{
     max-height: 600px;
     padding: 30px 20px;
 }
 
-.question-1 input[type="radio"]:checked+label::after {
-    transform: rotate(135deg);
+/* .question-1 input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
 }
+*/
+/* .question-1 input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+} 
+.question-1 input[type="radio"]:again-checked+label::after {
+    transform: rotate(-105deg);
+} */
+
 
 .search {
     display: flex;

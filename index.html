@@ -74,46 +74,46 @@
 
         <div class="question">
             <h1>Frequently Asked Questions</h1>
-           <ul class="question-1">
-            <li>
-                <input type="radio" name="vaibhav" id="pahila">
-                <label for="pahila">What is Netflix?</label>
-                <div class="content">
+            <ul class="question-1">
+               <li>
+                   <input type="radio" name="vaibhav" id="pahila">
+                   <label for="pahila" id="touch" class="touch">What is Netflix?</label >
+                <div class="content" id="content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt, dolorum odio rerum sunt a dicta! Impedit, cumque ipsam? Quis, quia expedita!</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="vaibhav" id="second">
-                <label for="second">How much does Netflix cost?</label>
-                <div class="content">
+                <label for="second" id="now-touch" class="touch">How much does Netflix cost?</label>
+                <div class="content" id="now-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt, dolorum odio rerum sunt a dicta! Impedit, cumque ipsam? Quis, quia expedita!</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="vaibhav" id="third">
-                <label for="third">Where can I watch?</label>
-                <div class="content">
+                <label for="third" id="three-touch" class="touch">Where can I watch?</label>
+                <div class="content" id="three-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt, dolorum odio rerum sunt a dicta! Impedit, cumque ipsam? Quis, quia expedita!</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="vaibhav" id="forth">
-                <label for="forth">How do I cancel?</label>
-                <div class="content">
+                <label for="forth" id="four-touch" class="touch">How do I cancel?</label>
+                <div class="content" id="four-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt, dolorum odio rerum sunt a dicta! Impedit, cumque ipsam? Quis, quia expedita!</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="vaibhav" id="fifth">
-                <label for="fifth">What can I watch on Netflix</label>
-                <div class="content">
+                <label for="fifth" id="fife-touch" class="touch">What can I watch on Netflix</label>
+                <div class="content" id="fife-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt, dolorum odio rerum sunt a dicta! Impedit, cumque ipsam? Quis, quia expedita!</p>
                 </div>
             </li>
             <li>
                 <input type="radio" name="vaibhav" id="sixth">
-                <label for="sixth">Is Netflix good for Kids?</label>
-                <div class="content">
+                <label for="sixth" id="six-touch" class="touch">Is Netflix good for Kids?</label>
+                <div class="content" id="six-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum deserunt, dolorum odio rerum sunt a dicta! Impedit, cumque ipsam? Quis, quia expedita!</p>
                 </div>
             </li>
@@ -166,5 +166,37 @@
     </div>
     </div>
 </body>
+<script>
+            var touch = document.getElementById('touch');
+            touch.onclick = function(){
+                let content = document.getElementById('content')
+                content.classList.toggle('sho')
+            }
+            let no = document.getElementById('now-touch');
+            no.onclick = function(){
+                let content = document.getElementById('now-content')
+                content.classList.toggle('sho')
+            }
+            let three = document.getElementById('three-touch');
+            three.onclick = function(){
+                let content = document.getElementById('three-content')
+                content.classList.toggle('sho')
+            }
+            let four = document.getElementById('four-touch');
+            four.onclick = function(){
+                let content = document.getElementById('four-content')
+                content.classList.toggle('sho')
+            }
+            let fife = document.getElementById('fife-touch');
+            fife.onclick = function(){
+                let content = document.getElementById('fife-content')
+                content.classList.toggle('sho')
+            }
+            let six = document.getElementById('six-touch');
+            six.onclick = function(){
+                let content = document.getElementById('six-content')
+                content.classList.toggle('sho')
+            }
 
+</script>
 </html>
